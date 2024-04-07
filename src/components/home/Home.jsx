@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
-    <div>
+    <div className="homepage">
         <div className="home1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quidem repudiandae maiores molestiae dignissimos eos dicta vel, 
