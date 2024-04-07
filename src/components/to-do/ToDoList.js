@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePen } from '@fortawesome/free-solid-svg-icons';
+import { faSquareMinus } from '@fortawesome/free-solid-svg-icons';
+
 
 export const ToDoList = ({item, toggleComplete, deleteTodo, editTodo}) => {
   return (
@@ -7,9 +11,13 @@ export const ToDoList = ({item, toggleComplete, deleteTodo, editTodo}) => {
        className={`${item.completed ? 'completed' : ""}`}>{item.item}</p>
 
       <div>
-        
-      </div>
+        <FontAwesomeIcon icon={faFilePen}
+          onClick={() => editTodo(item.id)} />
 
+        <FontAwesomeIcon icon={faSquareMinus}
+          onClick={() => deleteTodo(item.id)} />
+
+      </div>
     </div>
   )
 }
