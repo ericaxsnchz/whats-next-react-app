@@ -9,8 +9,9 @@ body {
 }
 
 header {
-    background-color: #7E8FC4;
+    background-color: rgb(126, 143, 196);
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .logo {
@@ -55,6 +56,49 @@ ul, li {
 }
 
 .homepage {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7E8FC4;
+}
+
+.home1 {
     background-color: rgba(255, 255, 255, 0.5 );
-    margin-top: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.home2 {
+    background-color: rgba(255, 255, 255, 0.5 );
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 33px 10px;
+    font-size: 30px;
+}
+
+.grad-btn {
+    color: white;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #7E8FC4 0%, #ccd5e7 51%, #7E8FC4 100%);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-size: 200% auto;
+    transition: 0.6s;
+}
+
+.grad-btn:hover {
+    background-position: right center;
 }
