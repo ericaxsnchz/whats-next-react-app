@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
@@ -11,7 +12,9 @@ export const Home = () => {
         </div>
         <div className="home2">
             <p>Ready to get started? Begin your to-do list today!</p>
-            <button type="button">create list</button>
+            <Link to="/to-do">
+              <button type="button">create list</button>
+            </Link>
         </div>
     </div>
   )
