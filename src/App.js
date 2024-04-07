@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-            <h1>what's next?</h1>
             <Router>
+            <h1>
+              <Link to="/home">what's next?</Link>
+            </h1>
               <ul>
                 <li>
                   <Link to="/home">about</Link>
@@ -25,6 +27,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/to-do" element={<ToDo />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route element={<Home />} />
               </Routes>
             </Router>
       </header>
