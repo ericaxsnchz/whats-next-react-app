@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+
+// allows user to input new to-do tasks
 export const ToDoForm = ({addTodo}) => {
 
   const [value, setValue] = useState('');
