@@ -1,10 +1,10 @@
 import React from 'react'
-import { ToDoForm } from './ToDoForm'
+import { ToDoWrapper } from './ToDoWrapper'
 
 export const ToDo = () => {
   return (
     <div>
-        <ToDoForm />
+        <ToDoWrapper />
     </div>
   )
 }
