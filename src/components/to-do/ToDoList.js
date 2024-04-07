@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const ToDoList = () => {
+export const ToDoList = ({item, toggleComplete, deleteTodo, editTodo}) => {
   return (
     <div className="todo-list">
-      <p>task</p>
+      <p onClick={() => toggleComplete(item.id)}
+       className={`${item.completed ? 'completed' : ""}`}>{item.item}</p>
+
+      <div>
+        
+      </div>
+
     </div>
   )
 }
