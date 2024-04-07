@@ -10,11 +10,11 @@ function App() {
       <header className="header">
             <Router>
             <h1>
-              <Link to="/home">what's next?</Link>
+              <Link to="/">what's next?</Link>
             </h1>
               <ul>
                 <li>
-                  <Link to="/home">about</Link>
+                  <Link to="/">about</Link>
                 </li>
                 <li>
                   <Link to="/to-do">to-do's</Link>
@@ -24,10 +24,10 @@ function App() {
                 </li>
               </ul>
               <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/to-do" element={<ToDo />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route element={<Home />} />
+                <Route path="/" element={<Home />} />
               </Routes>
             </Router>
       </header>
