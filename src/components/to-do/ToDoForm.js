@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 // allows user to input new to-do tasks
-export const ToDoForm = ({addTodo}) => {
+export const ToDoForm = ({addTodo, setFilteredTodos}) => {
   const [value, setValue] = useState('');
 
   const handleSubmit = e => {
@@ -25,15 +25,8 @@ export const ToDoForm = ({addTodo}) => {
                   add item
               </button>
           </form>
+          <hr />
       </div>
-      <div>
-        <ul className="todo-selectors">
-          <li>all</li>
-          <li>complete</li>
-          <li>incomplete</li>
-        </ul>
-      </div>
-
     </div>
   )
 }

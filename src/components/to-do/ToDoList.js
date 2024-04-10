@@ -5,17 +5,32 @@ import { faSquareMinus } from '@fortawesome/free-solid-svg-icons';
 
 
 export const ToDoList = ({item, toggleComplete, deleteTodo, editTodo}) => {
+  const handleToggleComplete = () => {
+    toggleComplete(item.id);
+  };
+
+  const handleDeleteTodo = () => {
+    deleteTodo(item.id);
+  };
+
+  const handleEditTodo = () => {
+    editTodo(item.id);
+  };
+
   return (
     <div className="todo-list">
-      <p onClick={() => toggleComplete(item.id)}
-       className={`${item.completed ? 'completed' : ""}`}>{item.item}</p>
+      {item.completed ? (
+        <p className="completed-item">{item.item}</p>
+      ) : (
+        <p onClick={handleToggleComplete}>{item.item}</p>
+      )}
 
-      <div>
+      <div className="update-btn">
         <FontAwesomeIcon icon={faFilePen}
-          onClick={() => editTodo(item.id)} />
+          onClick={handleEditTodo} />
 
         <FontAwesomeIcon icon={faSquareMinus}
-          onClick={() => deleteTodo(item.id)} />
+          onClick={handleDeleteTodo} />
 
       </div>
     </div>

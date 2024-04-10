@@ -3,12 +3,12 @@ import { v4 as uuidv4 } from 'uuid';
 import { ToDoForm } from './ToDoForm'
 import { ToDoList } from './ToDoList'
 import { ToDoEdit } from './ToDoEdit';
-import ListButton from './ListButton';
 
 uuidv4();
 
 export const ToDoWrapper = () => {
   const [todos, setTodos] = useState([]);
+  const [filter, setFilter] = useState('all');
 
   const addTodo = todo => {
     const newTodo = {id: uuidv4(), item: todo,
@@ -39,12 +39,31 @@ export const ToDoWrapper = () => {
     setTodos(updatedTodos);
   }
 
+  const filteredTodos = todos.filter(todo => {
+    switch(filter) {
+      case 'complete':
+        return todo.completed;
+      case 'incomplete':
+        return !todo.completed;
+      default:
+        return true;
+    }
+  })
+
   return (
     <div>
         <ToDoForm addTodo={addTodo} />
-        <ListButton setTodos={setTodos} />
 
-        {todos.map((todo, index) => (
+        <div>
+        <ul className="todo-selectors">
+          <li onClick={() => setFilter('all')}>all</li>
+          <li onClick={() => setFilter('complete')}>complete</li>
+          <li onClick={() => setFilter('incomplete')}>incomplete</li>
+        </ul>
+      </div>
+      <hr />
+      
+        {filteredTodos.map((todo, index) => (
           todo.isEditing ? (
             <ToDoEdit editTodo={editItem} item={todo} />
           ) : (
