@@ -163,7 +163,8 @@ hr {
 }
 
 .todo-selectors {
-    font-size: 25px;
+    font-size: 1.75rem;
+    color: #7E8FC4;
     display: flex;
     justify-content: space-around;
     align-items: center;
