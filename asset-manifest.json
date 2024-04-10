@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/whats-next-react-app/static/css/main.9aeffbe4.css",
+    "main.js": "/whats-next-react-app/static/js/main.0f458eb0.js",
+    "static/js/453.18273a0f.chunk.js": "/whats-next-react-app/static/js/453.18273a0f.chunk.js",
+    "index.html": "/whats-next-react-app/index.html",
+    "main.9aeffbe4.css.map": "/whats-next-react-app/static/css/main.9aeffbe4.css.map",
+    "main.0f458eb0.js.map": "/whats-next-react-app/static/js/main.0f458eb0.js.map",
+    "453.18273a0f.chunk.js.map": "/whats-next-react-app/static/js/453.18273a0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aeffbe4.css",
+    "static/js/main.0f458eb0.js"
+  ]
+}
