@@ -55,6 +55,8 @@ ul, li {
     padding: 10px 20px;
 }
 
+/* home page styles */
+
 .homepage {
     margin-top: 40px;
     display: flex;
@@ -101,4 +103,85 @@ h2 {
 
 .grad-btn:hover {
     background-position: right center;
+}
+
+/* to-do page styles */
+
+.to-do {
+    background-color: rgba(255, 255, 255, 0.5 );
+    margin: 40px 15px;
+    padding: 25px;
+}
+
+.todo-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.todo-input {
+    width: 40%;
+    padding: 13px 25px;
+    font-size: 30px;
+    display: block;
+}
+
+.todo-btn {
+    color: white;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #7E8FC4 0%, #ccd5e7 51%, #7E8FC4 100%);
+    padding: 20px;
+    border-radius: 1px;
+    border: none;
+    background-size: 200% auto;
+    transition: 0.6s;
+}
+
+.todo-btn:hover {
+    background-position: right center;
+}
+
+/* contact page styles */
+
+.contact-page {
+    background-color: rgba(255, 255, 255, 0.5 );
+    margin: 40px 15px;
+    padding: 25px;
+}
+
+.forms {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+input {
+    width: 60%;
+    padding: 13px 25px;
+    font-size: 30px;
+    display: block;
+}
+
+textarea {
+    width: 67%;
+    padding: 13px 25px;
+    font-size: 20px;
+    display: block;
+}
+
+
+label {
+    background-color: #7E8FC4;
+    color: white;
+    font-size: 30px;
+    border-radius: 2px 0px 0px 2px;
+    padding: 15px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }

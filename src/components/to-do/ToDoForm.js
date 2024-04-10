@@ -13,7 +13,7 @@ export const ToDoForm = ({addTodo}) => {
 
   return (
     <div>
-      <div className="todoForm">
+      <div>
         <form className="todo-form" onSubmit={handleSubmit}>
               <input 
               type="text" 
@@ -27,7 +27,7 @@ export const ToDoForm = ({addTodo}) => {
           </form>
       </div>
       <div>
-        <ul>
+        <ul className="todo-selectors">
           <li>all</li>
           <li>complete</li>
           <li>incomplete</li>
